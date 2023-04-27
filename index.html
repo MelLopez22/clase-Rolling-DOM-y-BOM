@@ -10,26 +10,64 @@
 </head>
 
 <body id="cambiarColor" class="light">
+    <h1>DOM</h1>
     <button onclick='cambiandoColor()'>Beige</button>
 
     <div id="padre">
-        <button  id="boton1" onclick="agregarElemento()">Agregando nuevo parrafo</button>
+        <button id="boton1" onclick="agregarElemento()">Agregando nuevo parrafo</button>
         <button id="boton2" onclick="eliminarElemento()">Eliminando parrafo</button>
     </div>
+    <div>
+        <h2>EVENTOS</h2>
+        <button onclick="escuchador()">Escuchando....desde onclick</button>
+        <button id="boton3">Escuchando....desde addEventListener</button>
+    </div>
 
-    <button onclick="escuchador()" >Escuchando....desde onclick</button>
-    <button id="boton3">Escuchando....desde addEventListener</button>
 
-    
 
-    <div class="variosDivs otraCLase nuevaClase">div 1</div>
+    <!--    <div class="variosDivs otraCLase nuevaClase">div 1</div>
     <div class="variosDivs">div 2</div>
-    <div class="variosDivs">div 3</div>
+    <div class="variosDivs">div 3</div> -->
+
+    <!-- ----------------------- -->
+
+   
 
 
-<!--     <script src="./bom.js"></script>
- -->    <script src="./dom.js"></script>
 
+    <div>
+        <form id="resetearFormulario">
+            <textarea placeholder="escribe aqui tu publicacion" id="texto-usuario" cols="30" rows="10"></textarea>
+            <div>
+
+                <button type="submit" id="botonSubmit">PUBLICAR</button>
+                <button id="botonReset" onreset="limpiarCampos">RESETEAR</button>
+            </div>
+        </form>
+        <div id="publicaciones">
+            Mis Publicaciones
+        </div>
+    </div>
+
+    <!-- ----------------------- -->
+
+
+    <div>
+        <button id="metodoTradicional">BOTON 1</button>
+        <button id="otromETODO">BOTON 2</button>
+        <button ondblclick="dobleClick()">Hazme doble click</button>
+    </div>
+
+
+    <!-- ----------------------- -->
+
+
+
+    <!-- <script src="./bom.js"></script> -->
+    <script src="./dom.js"></script>
+    <script src="./eventos.js"></script>
+<!--     <script src="./localSt.js"></script>
+ -->
 </body>
 
 </html>

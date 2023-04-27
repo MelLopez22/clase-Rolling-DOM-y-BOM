@@ -1,3 +1,20 @@
+body {
+    text-align: center;
+  }
+button {
+    margin: 2px;
+    border-radius: 8px;
+    border: 2px solid #ccc; 
+}  
+
+textarea{
+    margin: 5px;
+}
+
+#publicaciones{
+    margin: 5px;
+}
+
 .light{
     background-color: beige;
     color: black;
